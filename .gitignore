@@ -1,3 +1,5 @@
 .cache/wt
 .hw
 .runs
+.sim/sim_1/behav/xsim
+.ip_user_files
