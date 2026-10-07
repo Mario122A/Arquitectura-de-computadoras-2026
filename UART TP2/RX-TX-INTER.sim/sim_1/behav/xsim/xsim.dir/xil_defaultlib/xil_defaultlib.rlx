@@ -1,0 +1,8 @@
+0.7
+2020.2
+Jun 16 2026
+11:10:11
+C:/Users/Mario/Desktop/Arquitectura/Xilinx TPs/RX-TX-INTER/RX-TX-INTER.sim/sim_1/behav/xsim/glbl.v,1773749341,verilog,,,,glbl,,,,,,,,
+C:/Users/Mario/Desktop/Arquitectura/Xilinx TPs/RX-TX-INTER/RX-TX-INTER.srcs/sources_1/new/interface.v,1790956599,verilog,,C:/Users/Mario/Desktop/Arquitectura/Xilinx TPs/RX-TX-INTER/RX-TX-INTER.srcs/sources_1/new/tx.v,,interface_rx_tx,,,../../../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/Mario/Desktop/Arquitectura/Xilinx TPs/RX-TX-INTER/RX-TX-INTER.srcs/sources_1/new/tb.v,1791074438,verilog,,,,tb,,,../../../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/Mario/Desktop/Arquitectura/Xilinx TPs/RX-TX-INTER/RX-TX-INTER.srcs/sources_1/new/tx.v,1790908236,verilog,,C:/Users/Mario/Desktop/Arquitectura/Xilinx TPs/RX-TX-INTER/RX-TX-INTER.srcs/sources_1/new/tb.v,,tx,,,../../../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
