@@ -30,7 +30,7 @@ module tb;
     
     initial begin
         w_data = 8'hAA;
-        #52083 //no es necesario
+        //#52083 //no es necesario
         wr_uart = 1'b1;
         #20
         wr_uart = 1'b0;

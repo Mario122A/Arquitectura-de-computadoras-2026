@@ -32,7 +32,8 @@ module rx
     
     //DEFINICIÓN DE (E INICIALIZACIÓN DE ALGUNOS) REGISTROS
     reg [COUNTER_MODULE-1:0] counter = 0;
-    reg [3:0] state,s,n;
+    reg [3:0] state,n;
+    reg [4:0] s;
     reg s_tick = 0;
     reg [DATA_WIDTH-1:0] b;
     reg done = 0;
