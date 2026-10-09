@@ -5,8 +5,8 @@ parameter DATA_WIDTH = 8;
 
 reg clk=0;
 
-reg rd;
-reg wr;
+reg rd=0;
+reg wr=0;
 reg [DATA_WIDTH-1:0] w_data;
 
 wire [DATA_WIDTH-1:0] r_data;
@@ -26,16 +26,47 @@ top top_uut(
 always #10 clk = ~clk;
 
 initial begin
-w_data=8'h89;
+
+w_data=8'h02;
 wr=1'b1;
-rd=1'b0;
 #20
 wr=1'b0;
-#700000
+
+w_data=8'h03;
+wr=1'b1;
+#20
+wr=1'b0;
+
+w_data=8'h04;
+wr=1'b1;
+#20
+wr=1'b0;
+
+/*
+w_data=8'h05;
+wr=1'b1;
+#20
+wr=1'b0;
+*/
+
+#3000000
+
 rd=1'b1;
 #20
 rd=1'b0;
-#300000
+#20
+rd=1'b1;
+#20
+rd=1'b0;
+#20
+rd=1'b1;
+#20
+rd=1'b0;
+#20
+rd=1'b1;
+#20
+rd=1'b0;
+
 $finish;
 end
 

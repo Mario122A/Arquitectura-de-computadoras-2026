@@ -23,9 +23,14 @@ module interface_rx_tx (
     reg [7:0] rx_mem [0:3];
     reg [1:0] wp = 0;
     reg [1:0] rp = 0;
-
-    assign rx_empty = (wp == rp);
+    
+    //contador para muestreo de datos en buffer rx
+    reg [2:0] counter = 0; 
+    
+    assign rx_empty = (counter==0);
+    assign rx_full = (counter==4);
     assign r_data   = rx_mem[rp];
+    
 
     //=========================================================
     // FIFO Tx (nueva)
@@ -43,12 +48,15 @@ module interface_rx_tx (
 
     always @(posedge clk) begin
         // ----- FIFO Rx: sin cambios -----
-        if (rx_done_tick) begin
+        if (rx_done_tick && !rx_full) begin
             rx_mem[wp] <= dout;
             wp <= wp + 1;
+            counter<=counter+1;
         end
-        if (rd_uart && !rx_empty)
+        if (rd_uart && !rx_empty) begin
             rp <= rp + 1;
+            counter<=counter-1;
+        end
 
         // ----- FIFO Tx: escritura (lado ALU) -----
         if (wr_uart && !tx_full) begin

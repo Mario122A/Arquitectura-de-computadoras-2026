@@ -58,7 +58,7 @@ module rx
         
         case(state)
             IDLE: begin
-            
+                done <= 0;
                 if(rx==0) begin
                     s <= 0;
                     state <= START;
