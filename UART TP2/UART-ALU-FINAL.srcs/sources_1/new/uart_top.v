@@ -3,21 +3,21 @@
 module uart_top(
     input rx_uart_top,
     input clk,
-    output reg tx_uart_top
+    output tx_uart_top
     );
     
     //wires rx
-    wire d_out_w;
+    wire [7:0] d_out_w;
     wire rx_done_w;
     //wires tx
-    wire d_in_w;
+    wire [7:0] d_in_w;
     wire tx_done_w;
     wire tx_start_w;
     //wires alu
-    wire r_data_w;
+    wire [7:0] r_data_w;
     wire rd_w;
     wire rx_empty_w;
-    wire w_data_w;
+    wire [7:0] w_data_w;
     wire wr_w;
     wire tx_full_w;
     

@@ -7,8 +7,8 @@ module aluCombin
     input [DATA_WIDTH-1:0]A,
     input [DATA_WIDTH-1:0]B,
     input [OPCODE_WIDTH-1:0]OP,
-    output reg [DATA_WIDTH-1:0]S,
-    output reg C
+    output reg [DATA_WIDTH-1:0]S = {DATA_WIDTH{1'b0}},
+    output reg C = 0
     );
     
     localparam SUM_CODE = 6'b100000;

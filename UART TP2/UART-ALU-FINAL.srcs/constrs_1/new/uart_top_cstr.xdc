@@ -1,0 +1,6 @@
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+set_property IOSTANDARD LVCMOS33 [get_ports rx_uart_top]
+set_property PACKAGE_PIN W5 [get_ports clk]
+set_property PACKAGE_PIN B18 [get_ports rx_uart_top]
+set_property PACKAGE_PIN A18 [get_ports tx_uart_top]
+set_property IOSTANDARD LVCMOS33 [get_ports tx_uart_top]

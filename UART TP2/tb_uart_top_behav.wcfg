@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_uart_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_uart_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="2,447.901001 us"></ZoomEndTime>
+      <Cursor1Time time="600.290000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="153"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/tb_uart_top/rx_tb" type="logic">
+      <obj_property name="ElementShortName">rx_tb</obj_property>
+      <obj_property name="ObjectShortName">rx_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_top/clk_tb" type="logic">
+      <obj_property name="ElementShortName">clk_tb</obj_property>
+      <obj_property name="ObjectShortName">clk_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_top/tx_tb" type="logic">
+      <obj_property name="ElementShortName">tx_tb</obj_property>
+      <obj_property name="ObjectShortName">tx_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_top/uart_top_uut/alu_top_uut/alu/A" type="array">
+      <obj_property name="ElementShortName">A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">A[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_top/uart_top_uut/alu_top_uut/alu/B" type="array">
+      <obj_property name="ElementShortName">B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_top/uart_top_uut/alu_top_uut/alu/OP" type="array">
+      <obj_property name="ElementShortName">OP[5:0]</obj_property>
+      <obj_property name="ObjectShortName">OP[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_top/uart_top_uut/alu_top_uut/alu/S" type="array">
+      <obj_property name="ElementShortName">S[7:0]</obj_property>
+      <obj_property name="ObjectShortName">S[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_top/uart_top_uut/alu_top_uut/alu/C" type="logic">
+      <obj_property name="ElementShortName">C</obj_property>
+      <obj_property name="ObjectShortName">C</obj_property>
+   </wvobject>
+</wave_config>

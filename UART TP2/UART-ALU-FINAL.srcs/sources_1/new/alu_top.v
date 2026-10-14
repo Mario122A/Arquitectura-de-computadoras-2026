@@ -47,7 +47,7 @@ module alu_top
     end else begin
         case (state)
             S_WAIT_A: begin
-                if(!rx_empty_alu) begin
+                if(!rx_empty_alu&&!rd_alu) begin
                     A <= r_data_alu;
                     rd_alu <= 1'b1;
                     state <= S_WAIT_B;
@@ -56,7 +56,7 @@ module alu_top
             
             
             S_WAIT_B: begin
-                if(!rx_empty_alu) begin
+                if(!rx_empty_alu&&!rd_alu) begin
                     B <= r_data_alu;
                     rd_alu <= 1'b1;
                     state <= S_WAIT_OP;
@@ -64,7 +64,7 @@ module alu_top
             end
             
             S_WAIT_OP: begin
-                if(!rx_empty_alu) begin
+                if(!rx_empty_alu&&!rd_alu) begin
                     OP <= r_data_alu;
                     rd_alu <= 1'b1;
                     state <= S_CALC;
@@ -73,7 +73,7 @@ module alu_top
             
             S_CALC: begin
                 w_data_alu <= S;
-                if(!tx_full_alu) begin
+                if(!tx_full_alu&&!rd_alu) begin
                     C_LED <= C;
                     wr_alu <= 1'b1;
                     state <= S_WAIT_A;
