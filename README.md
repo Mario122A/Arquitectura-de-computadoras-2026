@@ -1,4 +1,4 @@
-**Arquitectura de Computadoras (2026)**
+#**Arquitectura de Computadoras (2026)**
 Repositorio destinado a la publicación de **trabajos prácticos, guías de laboratorio e informes** correspondientes a la asignatura **Arquitectura de Computadoras**.
 
 Autores:
