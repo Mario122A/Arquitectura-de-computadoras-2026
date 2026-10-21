@@ -1,24 +1,5 @@
 `timescale 1ns / 1ps
 
-//Se hace uso del clock para cálculo de ticks internos
-//dada la complejidad que implica generar una unidad
-//externa que provoque ticks, debido al hecho de que los
-//pulsos asociados al arribo del clock a las 163 repeticiones
-//suceden en los instantes de flanco de subida (o de bajada)
-//al estar la unidad de generación de ticks sincronizada
-//con la unidad rx es probable que esta última no logre
-//visualizar correctamente el pulso de tick. Es por esto
-//que de las soluciones planteadas hasta el momento la
-//más óptima es la aplicada en este código
-//
-//Como soluciones alternativas se pueden considerar la extensión
-//del pulso del tick 2 ciclos de clock o el desplazamiento del
-//clock asociado al rx medio ciclo respecto del clock
-//asociado a la unidad de generación de ticks, como se podrá ver
-//con un poco de análisis mental estos dos planteamientos
-//traen consigo diversos problemas de aplicación y diseño
-
-
 module rx
     #(parameter DATA_WIDTH = 8,
       parameter COUNTER_MODULE = 8,
