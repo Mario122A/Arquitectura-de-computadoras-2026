@@ -29,7 +29,7 @@ module tb_alu_top;
     localparam [OPCODE_WIDTH-1:0] SLTU_CODE = 6'b101011;
 
     // Instancia de alu_top
-    alu_top #(
+    ALU_BASE_TOP #(
         .DATA_WIDTH(DATA_WIDTH),
         .OPCODE_WIDTH(OPCODE_WIDTH)
     ) dut (

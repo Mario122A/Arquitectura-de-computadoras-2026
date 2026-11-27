@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module imem_rv32 #(
+module IMEM_LUTRAM #(
     parameter ADDR_WIDTH = 10,              // 1024 palabras de 32 bits = 4 KB de instrucciones
     parameter MEM_DEPTH  = (1 << ADDR_WIDTH)
 )(
